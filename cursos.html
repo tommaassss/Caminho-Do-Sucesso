@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gabriel Oliveira e grupo">
+    <link rel="stylesheet" href="Cursos.css">
+    <title>Página de Cursos</title>
+</head>
+
+<body>
+    <section>
+        <div class="background-section">
+            <video src="Design sem nome (2).mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+
+            <div class="header">
+                <header>
+                    <div class="navbar">
+
+                        <div class="logo"><a href="#">Caminho Do Sucesso</a></div>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="mentores.html">Mentores</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                        <a href="#" class="action_btn">Get Started</a>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <ul class="links"></ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentores.html">Mentores</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="#" class="action_btn">Get Started</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn')
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                    toggleBtn.onclick = function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                    }
+                </script>
+
+                <div class="conteudo">
+                    <h1>Cursos</h1>
+
+                    <div class="tecnologia">
+
+                        <h2>Tecnologia</h2>
+
+                        <div class="grupotecno">
+
+                            <div class="programação">
+                                <h3>Desenvolvedor Web</h3>
+                            </div>
+
+                            <div class="analista">
+                                <h3>Análise de Sistemas</h3>
+                            </div>
+
+                            <div class="hardware">
+                                <h3>Hardware</h3>
+                            </div>
+
+                            <div class="robotica">
+                                <h3>Robótica</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saude">
+
+                        <h2>Saúde</h2>
+
+                        <div class="gruposaude">
+
+                            <div class="medicina">
+                                <h3>Medicina</h3>
+                            </div>
+
+                            <div class="enfermagem">
+                                <h3>Técnico Enfermagem</h3>
+                            </div>
+
+                            <div class="med_veterinario">
+                                <h3>Médico Veterinário</h3>
+                            </div>
+
+                            <div class="psicologia">
+                                <h3>Psicologia</h3>
+                            </div>
+                        </div>
+
+                        <div class="direito">
+
+                            <h2>Direito</h2>
+
+                            <div class="grupodireito">
+
+                                <div class="advogado">
+                                    <h3>Advogado</h3>
+                                </div>
+
+                                <div class="juiz">
+                                    <h3>Juiz </h3>
+                                </div>
+
+                                <div class="promotor">
+                                    <h3>Promotor</h3>
+                                </div>
+
+                                <div class="defensor">
+                                    <h3>Defensor Público</h3>
+                                </div>
+                            </div>
+
+                            <div class="empreendorismo">
+
+                                <h2>Empreendorismo</h2>
+
+                                <div class="grupoemoreendorismo">
+
+                                    <div class="marketing">
+                                        <h3>Marketing Digital</h3>
+                                    </div>
+
+                                    <div class="alimentação">
+                                        <h3>Alimentação e Gastronomia</h3>
+                                    </div>
+
+                                    <div class="arte">
+                                        <h3>Arte e Artesanato</h3>
+                                    </div>
+
+                                    <div class="moda">
+                                        <h3>Moda e Beleza</h3>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+</body>
+
+</html>

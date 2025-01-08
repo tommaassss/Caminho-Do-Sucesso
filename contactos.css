@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+/* Nesta parte do codigo estou definindo as definições gerais do corpo do site,
+ definimos o tamanho, a cor de fundo, a imagem de fundo, o tamanho e a posição*/
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-position: center;
+    overflow-y: scroll;
+    /* Para garantir que a barra apareça quando necessário */
+}
+
+
+
+/* Estilos para a barra de rolagem no eixo Y */
+body::-webkit-scrollbar {
+    width: 8px;
+    /* Ajusta a largura da barra de rolagem no eixo Y */
+}
+
+/* Transparência no fundo da barra */
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* Fundo da barra de rolagem */
+}
+
+/* Transparência ou estilo para o “polegar” (a parte que o usuário arrasta) */
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    /* Tornando o polegar ligeiramente visível e transparente */
+    border-radius: 4px;
+    /* Deixa o polegar com bordas arredondadas */
+}
+
+/* Opacidade ao passar o mouse sobre o “polegar” */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+    /* Aumenta a visibilidade ao passar o mouse */
+}
+
+/* Header*/
+/* A tag "li" normalmente ja vem com um estilo pre-definido e aqui estamos removendo-o*/
+li {
+    list-style: none;
+
+}
+
+/* Aqui estamos a removr a configuração inicial da  decoração que vem pre-definida e definimos a cor e o tamanho */
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* A função "hover"  faz com que quando passamos o cursor por cima da ligação que esta na tag "a" o botao fique de outra cor nete caso laranja */
+a:hover {
+    color: rgb(121, 121, 121);
+}
+
+/* Header - No cabeçalho definimos a posição e o espaçamento de um elemento a outro*/
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+/* Aqui estamos configurando o menu*/
+.navbar {
+
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Deixa o menu em uma so linha e cria um espaçamento entre os intens do menu*/
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Quando o cursor passar em cima vai aparecer a maozinha*/
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: rgba(255, 166, 0, 0);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 2px solid #9b9b9b;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*dropdown_menu*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Responsive Design */
+@media(max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*.slogan{
+    color: #fff;
+    text-align: center;
+    margin: 70px;
+    font-size: 30px;
+    font-style: italic;
+    margin: 200px;
+}*/
+
+/* Background video e imagem logo*/
+/*section.first{
+    min-height: 100vh;
+   
+}
+
+section.second{
+    min-height: 100vh;
+}
+
+section.third{
+    min-height: 100vh;
+}
+section.fourth{
+    min-height: 100vh;
+}
+p{
+    font-style: italic;
+    color:#fff;
+    text-align: center;
+    margin: 70px;
+}*/
+section {
+    width: 100%;
+    height: 200%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+section div.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+section div.box div.conteudo {
+    width: 80%;
+    margin: 80px;
+    margin-left: 10%;
+    align-items: center;
+
+}
+
+section div.box h1 {
+    color: #fff;
+    line-height: 32px;
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+section div.box h2 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+section div.box h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+section div.box p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section div.box .conteudo {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+ul {
+
+    list-style: circle;
+}
+
+section div.box img {
+    width: 600px;
+    min-width: 350px;
+}
+
+section div.box p {
+
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
+}
+
+section div.box .header {
+
+    position: relative;
+    align-items: top;
+}
+
+/* Aqui estou dizendo que se o ecra for menor do que 1024px é para ultilizar 
+as instruções a seguir*/
+@media screen and (max-width: 1024px) {
+
+    section div.box {
+        width: 100%;
+        padding: 2%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    section div.box div.conteudo {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+/*Fim do Back-ground e e.t.c.

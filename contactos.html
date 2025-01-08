@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gabriel Oliveira e gruopo">
+    <link rel="stylesheet" href="contactos.css">
+    <title>Sobre Nós</title>
+</head>
+
+<body>
+    <section>
+        <div class="background-section">
+            <video src="Design sem nome (2).mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+
+            <div class="header">
+                <header>
+                    <div class="navbar">
+
+                        <div class="logo"><a href="#">Caminho Do Sucesso</a></div>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="mentores.html">Mentores</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                        <a href="#" class="action_btn">Get Started</a>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <ul class="links"></ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentores.html">Mentores</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="#" class="action_btn">Get Started</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn')
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                    toggleBtn.onclick = function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                    }
+                </script>
+
+                <div class="conteudo">
+                    <h1> Contactos</h1>
+
+                    <br><br>
+
+                    <h2>Informações de contato básico</h2> 
+
+                    <div class="lu">
+                        <ul class="conteudo">
+                            <li>Endereço de E-mail: <u>Caminho.do.sucesso@outlook.com</u></li>
+                            <li>Numero de Tefone: <u>+351 21 234 5678</u></li>
+                            <li>Endereço Fisico: </li>
+                                   <a href="https://www.google.com/search?q=poeta+joaquim+serra&oq=poeta+joaquim+&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYOTIHCAMQABiABDIHCAQQLhiABDIHCAUQABiABDIICAYQABgWGB4yCAgHEAAYFhgeMgoICBAAGAoYFhgeMgoICRAAGA8YFhge0gEINDUxNGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><u>Alameda
+                                        Dr. José Manuel Afonso dos Santos 26, 2870-862 Montijo</u></a></li>
+                        </ul>
+
+                        <hr style="margin-right: 30%;">
+
+                        <br>    
+
+                        <h2>Links para Redes Sociais</h2>
+
+                        <ul>
+                            <li><a href="https://www.instagram.com/caminhodosucessoficial/"
+                                    target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/acaminhodosucesso/?locale=pt_BR"
+                                    target="_blank">Facebook</a></li>
+                            <li><a href="https://www.tiktok.com/@caminh0.do.sucesso" target="_blank">TikTok</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- <h1>Caminho do Sucesso</h1>
+
+    <p>Somos um empresa com o objetivo de criar fortes profissionais para a proxima geração, e para tal iniciamos este
+        projeto com o intuito de formar fortes e determinandos profissionais para diversas areas. Acreditamos que com
+        este projeto sera uma realidade existirem trabalhadores altamente qlalificados levando assim o nosso mundo para
+        outro nivel ate que chegue o maravilhoso fim, o arrebatamento. </p>
+    <a href="navbar2.html" class="voltar">Voltar</a>-->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gabriel Oliveira e grupo">
+    <link rel="stylesheet" href="sobrenos.css">
+    <title>Sobre Nós</title>
+</head>
+
+<body>
+    <section>
+        <div class="background-section">
+            <video src="Design sem nome (2).mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+
+            <div class="header">
+                <header>
+                    <div class="navbar">
+
+                        <div class="logo"><a href="#">Caminho Do Sucesso</a></div>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="mentores.html">Mentores</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                        <a href="#" class="action_btn">Get Started</a>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <ul class="links"></ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentores.html">Mentores</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn')
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                    toggleBtn.onclick = function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                    }
+                </script>
+
+                <div class="conteudo">
+
+                        <img src="Logo-SobreNós.png" alt="logo sobre nós">
+        
+                     <div class="cont2">
+
+                        <!--<h1> Sobre Nós</h1>-->
+
+                        <h2 class="um">Propósito</h2>
+    
+                        <p class="um"> Somos uma empresa que tem como objetivo criar profissionais para a próxima geração. Para
+                            tal, iniciamos este
+                            projeto com o objetivo de formar profissionais para diversas áreas.</p>
+    
+                            <br><br><br>
+
+                            <hr>
+
+                            <br><br><br>
+
+                        <h2 class="dois">Missão, Visão e Valores</h2>
+
+                        <br>
+
+                        <h3>Missão</h3>
+
+                        <br>
+    
+                        <p> A nossa missão é criar novas oportunidades para jovens perdidos.</p>
+
+                        <br><br><br>
+    
+                        <h3>Visão</h3>
+
+                        <br>
+    
+                        <p> Visamos ser uma empresa de confiança e conhecida por ajudar. Somos o Caminho do Sucesso, onde
+                            cada passo leva ao progresso.</p>
+
+                     </div>                   
+                </div>
+            </div>
+    </section>
+
+
+</body>
+
+</html>

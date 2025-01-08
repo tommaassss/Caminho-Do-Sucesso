@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gabriel Oliveira e gruopo">
+    <link rel="stylesheet" href="mentores.css">
+    <title>Mentores</title>
+</head>
+
+<body>
+    <section>
+        <div class="background-section">
+            <video src="Design sem nome (2).mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+
+            <div class="header">
+                <header>
+                    <div class="navbar">
+
+                        <div class="logo"><a href="#">Caminho Do Sucesso</a></div>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="mentores.html">Mentores</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                        <a href="#" class="action_btn">Get Started</a>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <ul class="links"></ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentores.html">Mentores</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn')
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                    toggleBtn.onclick = function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                    }
+                </script>
+                <div class="conteudo">
+                    <h1>Mentores</h1>
+
+                    <div class="tecnologia">
+
+                        <h2>Mentores Principais</h2>
+
+                        <div class="grupotecno">
+
+                            <div class="programação">
+                                <h3>Mentor 1</h3>
+                            </div>
+
+                            <div class="analista">
+                                <h3>Mentor 2</h3>
+                            </div>
+
+                            <div class="hardware">
+                                <h3>Mentor 3</h3>
+                            </div>
+
+                            <div class="robotica">
+                                <h3>Mentor 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saude">
+
+                        <h2>Saúde</h2>
+
+                        <div class="gruposaude">
+
+                            <div class="medicina">
+                                <h3>Mentor 5 </h3>
+                            </div>
+
+                            <div class="enfermagem">
+                                <h3>Mentor 6</h3>
+                            </div>
+
+                            <div class="med_veterinario">
+                                <h3>Mentor 7</h3>
+                            </div>
+
+                            <div class="psicologia">
+                                <h3>Mentor 8</h3>
+                            </div>
+                        </div>
+
+                        <div class="direito">
+
+                            <h2>Direito</h2>
+
+                            <div class="grupodireito">
+
+                                <div class="advogado">
+                                    <h3>Mentor 9</h3>
+                                </div>
+
+                                <div class="juiz">
+                                    <h3>Mentor 10 </h3>
+                                </div>
+
+                                <div class="promotor">
+                                    <h3>Mentor 11</h3>
+                                </div>
+
+                                <div class="defensor">
+                                    <h3>Mentor 12</h3>
+                                </div>
+                            </div>
+
+                            <div class="empreendorismo">
+
+                                <h2>Empreendorismo</h2>
+
+                                <div class="grupoemoreendorismo">
+
+                                    <div class="marketing">
+                                        <h3>Mentor 13</h3>
+                                    </div>
+
+                                    <div class="alimentação">
+                                        <h3>Mentor 14</h3>
+                                    </div>
+
+                                    <div class="arte">
+                                        <h3>Mentor 15</h3>
+                                    </div>
+
+                                    <div class="moda">
+                                        <h3>Mentor 16</h3>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                <div class="conteudo">
+                    
+
+                        
+            </div>
+    </section>
+</body>
+</html>

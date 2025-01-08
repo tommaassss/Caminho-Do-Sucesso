@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gabriel Oliveira e grupo">
+    <link rel="stylesheet" href="pass.css">
+    <title>Recuperação Password</title>
+</head>
+
+<body>
+    <section>
+        <div class="background-section">
+            <video src="Design sem nome (2).mp4" autoplay loop muted></video>
+        </div>
+        <div class="box">
+
+            <div class="header">
+                <header>
+                    <div class="navbar">
+
+                        <div class="logo"><a href="#">Caminho Do Sucesso</a></div>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="mentores.html">Mentores</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                        <a href="#" class="action_btn">Get Started</a>
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <ul class="links"></ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentores.html">Mentores</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="#" class="action_btn">Get Started</a></li>
+                        </ul>
+                    </div>
+
+                </header>
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn')
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                    toggleBtn.onclick = function () {
+                        dropdownMenu.classList.toggle('open')
+                        const isOpen = dropdownMenu.classList.contains('open')
+
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars'
+                    }
+                </script>
+
+                <div class="conteudo">
+
+                </div>
+            </div>
+    </section>
+
+
+</body>
+
+</html>
